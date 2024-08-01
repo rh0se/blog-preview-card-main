@@ -1,10 +1,30 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme  = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        figtree: ['"Figtree"', ...defaultTheme.fontFamily.sans]
+      },
+      boxShadow: {
+        '3xl': '8px 8px 0 rgba(0, 0, 0)',
+      }, 
+      spacing: {
+        '128': '23rem',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+        '14': '14px',
+        '16': '16px',
+        "10": "10px"
+      },
       height: {
-        '128': '28rem'
+        '128': '30rem'
       },
       colors: {
         yellow: "hsl(47, 88%, 63%)",

@@ -7,51 +7,37 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="./src/output.css" rel="stylesheet">
 
   <title>Frontend Mentor | Blog preview card</title>
 
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
-<body class="bg-yellow h-screen flex justify-center items-center overflow-y-auto">
+<body class="bg-yellow h-screen flex justify-center items-center flex-col overflow-y-auto font-figtree">
 
-  <main class="h-full flex justify-center items-center w-full flex-col">
-    <div class="bg-white h-[28rem] w-72 p-2 rounded-2xl border-r-8 border-b-8 border-l-2 border-t-2">
-      <img class="rounded-2xl p-2" src="./assets/images/illustration-article.svg">
-      <p class="bg-yellow">Learning</p>
-      <p>Published 21 Dec 2023</p>
-      <p class="font-bold"> HTML & CSS foundations</p>
-      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-      <p class="inline-flex pt-6 font-bold"><img src="./assets/images/image-avatar.webp" class="w-10">Greg Hooper</p>
+  <main class=" m-auto max-h-full border-box">
+    <div class="bg-white md:w-128 h-[30rem] w-72  py-4 px-5 rounded-2xl border border-black shadow-3xl m-auto">
+      <img class="rounded-2xl" src="./assets/images/illustration-article.svg">
+      <p class="bg-yellow font-extrabold w-20 text-sm my-4 p-1 rounded-sm text-center">Learning</p>
+      <p class="text-gray-950 font-medium text-sm">Published 21 Dec 2023</p>
+      <p class="font-extrabold text-2xl pt-3 hover:text-yellow cursor-pointer"> HTML & CSS foundations</p>
+      <p class="pt-2 text-gray-500 font-medium">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <p class="inline-flex justify-center items-center pt-5 font-extrabold"><img src="./assets/images/image-avatar.webp" class="w-10 pr-3">Greg Hooper</p>
 
     </div>
 
   </main>
 
 
-  <!--  <div class="attribution"> 
-
-  
-
-
-  
+   <div class="attribution" class="text-center text-sm"> 
 
  
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-600 cursor-pointer hover:text-gray-500">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/rh0se" class="text-blue-600 cursor-pointer hover:text-gray-500" target="_blank">Rh0se</a>.
+  </div>
 </body>
 
 </html>
